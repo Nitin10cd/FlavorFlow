@@ -1,0 +1,171 @@
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    transition: 0.3s;
+    color: teal;
+    font-size: 30px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.navbar-menu .active {
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background: tomato;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    border: 2px solid white;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background: #fff4f2;
+}
+
+.navbar-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-profile img {
+    width: 30px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.navbar-profile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    list-style: none;
+    width: 180px;
+    display: none;
+    flex-direction: column;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.navbar-profile .navbar-profile-dropdown {
+    display: flex;
+}
+
+.navbar-profile-dropdown li {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.navbar-profile-dropdown li:hover {
+    background: #f2f2f2;
+}
+
+.logout {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+    .navbar-menu {
+        gap: 15px;
+        font-size: 17px;
+    }
+    .navbar-right {
+        gap: 30px;
+    }
+    .navbar-right img {
+        width: 22px;
+    }
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+    .navbar-menu {
+        gap: 12px;
+        font-size: 16px;
+    }
+    .navbar-right {
+        gap: 20px;
+    }
+    .navbar-right img {
+        width: 20px;
+    }
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+    .navbar-right {
+        gap: 15px;
+    }
+}

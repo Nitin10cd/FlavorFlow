@@ -1,0 +1,119 @@
+.food-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.rateImage {
+  width: 100px;
+  height: 20px;
+}
+
+.food-details-image {
+  width: 350px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.food-details-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.food-details-info h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #004d4d;
+  margin-bottom: 10px;
+}
+
+.food-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.food-category {
+  font-size: 14px;
+  font-weight: 500;
+  color: #004d4d;
+  background: #e0f2f1;
+  padding: 6px 12px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.food-hotel {
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.food-ingredients {
+  font-size: 14px;
+  color: #555;
+  background: #e0f2f1;
+  padding: 8px 12px;
+  border-left: 4px solid #008080;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.food-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #008080;
+  margin-bottom: 15px;
+}
+
+.add-to-cart-button {
+  background: #008080;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  width: fit-content;
+}
+
+.add-to-cart-button:hover {
+  background: #006666;
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .food-details-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+  }
+
+  .food-details-image {
+      width: 90%;
+      max-width: 400px;
+  }
+
+  .food-details-info {
+      align-items: center;
+  }
+
+  .add-to-cart-button {
+      width: 100%;
+  }
+}

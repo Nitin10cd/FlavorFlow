@@ -1,0 +1,74 @@
+.dishFormDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('/cake.png') no-repeat center;
+    background-size: cover;
+}
+
+.dishFormData {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dishFormData h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dishDivs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dishDivs .inputGroup {
+    width: 48%; }
+
+.dishFormData label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.dishFormData input,
+.dishFormData textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dishFormData textarea {
+    height: 80px;
+    resize: none;
+}
+
+.dishFormData button {
+    margin-top: 15px;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dishFormData button:hover {
+    background-color: #e64a19;
+}

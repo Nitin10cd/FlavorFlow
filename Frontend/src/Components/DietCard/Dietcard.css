@@ -1,0 +1,80 @@
+.dietCardss { 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dietCardss h2 {
+    color: #008080;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.dietCardss p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.dietcard-ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.dietcard-ul li {
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dietcard-ul li:hover {
+    transform: scale(1.05);
+}
+
+.dietcard-ul li img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dietcard-ul li img:hover {
+    transform: scale(1.1);
+}
+
+.dietcard-ul li h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #005f5f; 
+}
+
+.dietcard-ul li p {
+    font-size: 16px;
+    color: #555;
+}
+
+.diet-description {
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+}
+
+.dietcard-ul li span {
+    font-weight: bold;
+    color: #008080; 
+}

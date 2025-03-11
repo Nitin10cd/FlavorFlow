@@ -1,0 +1,140 @@
+.cart {
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw, 14px);
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid #009999;
+    text-align: center;
+}
+
+.cart-items-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+.cart-items-item:hover {
+    background: #f0f9f9;
+}
+
+.cart-items-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cross {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.cross:hover {
+    color: #006666;
+}
+
+.cart-bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cart-total {
+    flex: 1;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-total h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #004d4d;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #555;
+    padding: 10px 0;
+}
+
+.cart-total button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #008080;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-total button:hover {
+    background: #006666;
+}
+
+.cart-total button:disabled {
+    background: grey;
+    cursor: not-allowed;
+}
+
+.cart-promocode {
+    margin-top: 20px;
+}
+
+.cart-promocode p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.cart-promocode-input {
+    display: flex;
+    gap: 10px;
+}
+
+.cart-promocode-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #009999;
+    border-radius: 4px;
+}
+
+.cart-promocode-input button {
+    background: #008080;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-promocode-input button:hover {
+    background: #006666;
+}
